@@ -1,0 +1,3 @@
+MESAPM \b(?:ene(?:ro)?|feb(?:rero)?|mar(?:zo)?|abr(?:il)?|may|jun(?:io)?|jul(?:io)?|ago(?:sto)?|sep(?:tiembre)?|oct(?:ubre)?|nov(?:iembre)?|dic(?:iembre)?)\b
+anomesdia (%{MONTHDAY:dia}-%{MESAPM:mes}-%{YEAR:ano} %{HOUR}:%{MINUTE})
+horamin (%{HOUR:hora}%{MINUTE:min})

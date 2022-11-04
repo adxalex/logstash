@@ -1,0 +1,29 @@
+#
+
+---
+# IBM WebSphere MQ
+wmq:
+  :factory: com.ibm.mq.jms.MQQueueConnectionFactory
+  :queue_manager: MAN.GER.PP.QM
+  :host_name: 127.0.0.1
+  :channel: CANAL.CH
+  :port: 2030
+  # Transport Type: com.ibm.mq.jms.JMSC::MQJMS_TP_CLIENT_MQ_TCPIP
+  :transport_type: 1
+  #:username: app
+  #:password: password
+  :require_jars:
+    - /mnt/c/adx/com.ibm.dhbcore.jar
+    - /mnt/c/adx/com.ibm.mq.axis2.jar
+    - /mnt/c/adx/com.ibm.mq.commonservices.jar
+    - /mnt/c/adx/com.ibm.mq.headers.jar
+    - /mnt/c/adx/com.ibm.mq.jar
+    - /mnt/c/adx/com.ibm.mq.jmqi.jar
+    - /mnt/c/adx/com.ibm.mq.jms.Nojndi.jar
+    - /mnt/c/adx/com.ibm.mq.pcf.jar
+    - /mnt/c/adx/com.ibm.mq.soap.jar
+    - /mnt/c/adx/com.ibm.mq.tools.ras.jar
+    - /mnt/c/adx/com.ibm.mqjms.jar
+    - /mnt/c/adx/javax.jms.jar
+    - /mnt/c/adx/javax.resource.jar
+    - /mnt/c/adx/javax.transaction.jar
